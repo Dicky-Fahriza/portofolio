@@ -1,0 +1,298 @@
+* {
+    box-sizing: border-box;
+}
+
+@media screen and (max-width: 1000px) {
+    #content,
+    aside {
+        width: 100%;
+        padding: 0;
+    }
+}
+
+#navbar {
+    height: 60px;
+    background-color: black;
+    text-align: right;
+    padding-top: 20px;
+}
+
+#profile {
+    margin: auto;
+    background-image: url('assets/baground.jpg');
+    padding: 130px;
+    text-align: center;
+    color: #ffffff;
+}
+
+#profile h1 {
+    color: #ffffff;
+}
+
+.btrans{
+    background-color: rgba(0,0,0,0.9);
+    padding: 0.5px;
+    border-radius: 50px;
+}
+
+footer {
+    background: black;
+    color: white;
+    height: 60px;
+    padding-top: 5px;
+    text-align: center;
+    font-size: 14px;
+}
+
+body {
+    font-family: 'georgia', serif;
+    margin: 0;
+    font-size: 1.2vw;
+}
+
+img {
+    width: 250px;
+    padding-top: 20px;
+}
+
+.ava{
+  width: 100%;
+}
+
+.ava img{
+  width: 180px;
+  height: 200px;
+}
+
+.contact{
+  width: 100%;
+}
+
+.contact img{
+  width: 200px;
+  height: 200px;
+  margin-top: -60px;
+}
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    display: inline;
+}
+
+li a {
+    padding: 20px; 
+    text-decoration: none;
+    color: white;
+}
+
+li a:hover {
+    background-color: white;
+    color: #066420;
+}
+
+.centera {
+    margin: auto;
+    background-image: url('assets/baground02.png');
+    background-size: cover;
+    color: #000000;
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+.center {
+    margin: auto;
+    background-image: url('assets/baground03.png');
+    background-size: cover;
+    padding: 20px;
+    text-align: center;
+}
+
+.center h3 {
+    font-size: 20px;
+    font-weight: bolder;
+    color: #066420;
+}
+
+.message {
+    width: 600px;
+    margin: auto;
+}
+
+.myimg {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 15px;
+    float: left;
+    margin-right: 10px;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.sticky + .content {
+    padding-top: 60px;
+}
+
+
+article{
+	float:left;
+	width: 65%;
+	line-height:21px;
+	color:#000000;
+}
+
+aside {
+    float: right;
+    width: 25%;
+    padding-left: 20px;
+}
+
+#content {
+    float: left;
+    width: 75%;
+}
+
+main {
+    padding: 20px;
+    overflow: auto;
+}
+
+.container {
+  display: flex;
+
+  /* Properti lainnya */
+  width: 650px;
+  height: 150px;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 0 auto;
+}
+.box {
+  flex-grow: 1;
+
+  /* properti lainnya */
+  background-color: #eeeee6;
+  margin: 2px;
+  border-radius: 10px;
+}
+
+
+.slider{
+  width: 800px;
+  height: 400px;
+  overflow: hidden;
+}
+
+.slides{
+  width: 500%;
+  height: 400px;
+  display: flex;
+}
+
+.slides input{
+  display: none;
+}
+
+.slide{
+  width: 20%;
+  transition: 2s;
+}
+
+.slide img{
+  width: 800px;
+  height: 400px;
+}
+
+/*css for manual slide navigation*/
+
+.navigation-manual{
+  position: absolute;
+  width: 800px;
+  margin-top: -40px;
+  display: flex;
+  justify-content: center;
+}
+
+.manual-btn{
+  border: 2px solid #000000;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.manual-btn:not(:last-child){
+  margin-right: 40px;
+}
+
+.manual-btn:hover{
+  background: #000000;
+}
+
+#radio1:checked ~ .first{
+  margin-left: 0;
+}
+
+#radio2:checked ~ .first{
+  margin-left: -20%;
+}
+
+#radio3:checked ~ .first{
+  margin-left: -40%;
+}
+
+#radio4:checked ~ .first{
+  margin-left: -60%;
+}
+
+/*css for automatic navigation*/
+
+.navigation-auto{
+  position: absolute;
+  display: flex;
+  width: 800px;
+  justify-content: center;
+  margin-top: 360px;
+}
+
+.navigation-auto div{
+  border: 2px solid #000000;
+  padding: 5px;
+  border-radius: 10px;
+  transition: 1s;
+}
+
+.navigation-auto div:not(:last-child){
+  margin-right: 40px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1{
+  background: #000000;
+}
+
+#radio2:checked ~ .navigation-auto .auto-btn2{
+  background: #000000;
+}
+
+#radio3:checked ~ .navigation-auto .auto-btn3{
+  background: #000000;
+}
+
+#radio4:checked ~ .navigation-auto .auto-btn4{
+  background: #000000;
+}
+.x{
+padding-left: 100px;
+}
