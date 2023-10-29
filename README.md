@@ -1,3 +1,3 @@
 # blog
-![Teks Alternatif](assets/Responsive Layout.jpg)
+![Teks Alternatif](assets/000.jpg)
 Goals : Menyelesaikan sumbission dicoding indonesia pada kelas "Belajar dasar pemrograman web"
